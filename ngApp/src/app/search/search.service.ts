@@ -10,9 +10,11 @@ import { FlightData } from '../shared/flight-data.model';
   providedIn: 'root'
 })
 export class SearchService {
-
+  
   flights: FlightData[] = [];
-  readonly baseURL = 'http://localhost:3000/flights';
+  // readonly baseURL = 'http://localhost:3000/flights';
+  
+  readonly baseURL = 'https://gs50b7rkk9.execute-api.us-west-2.amazonaws.com/production/flights';
 
   constructor(private http: HttpClient) { }
 

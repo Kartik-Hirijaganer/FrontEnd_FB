@@ -10,10 +10,11 @@ import { FlightData } from './flight-data.model';
   providedIn: 'root'
 })
 export class AdminService {
-
+  
   selectedFlight: FlightData = new FlightData;
   flights: FlightData[] = [];
-  readonly baseURL = 'http://localhost:3100/admin';
+  // readonly baseURL = 'http://localhost:3100/admin';
+  readonly baseURL = 'https://evtuzv4z28.execute-api.us-west-2.amazonaws.com/production/admin';
 
   constructor(private http: HttpClient) { }
 

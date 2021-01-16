@@ -25,10 +25,18 @@ export class BookFlightService {
     dateOfBirth: ''
   }
  
-  readonly baseURL = 'http://localhost:3300/booking/add';
-  readonly bookingsUrl = 'http://localhost:3300/booking/allbookings/';
-  readonly cancelUrl = "http://localhost:3300/booking/cancel/";
-  readonly allBookingsUrl = "http://localhost:3300/booking/all";
+  // readonly baseURL = 'http://localhost:3300/booking/add';
+  // readonly bookingsUrl = 'http://localhost:3300/booking/allbookings/';
+  // readonly cancelUrl = "http://localhost:3300/booking/cancel/";
+  // readonly allBookingsUrl = "http://localhost:3300/booking/all";
+
+  readonly baseURL = 'https://p6ob2gcmx6.execute-api.us-west-2.amazonaws.com/production/booking/add';
+
+  readonly bookingsUrl = 'https://p6ob2gcmx6.execute-api.us-west-2.amazonaws.com/production/booking/allbookings/';
+
+  readonly cancelUrl = "https://p6ob2gcmx6.execute-api.us-west-2.amazonaws.com/production/booking/cancel/";
+  
+  readonly allBookingsUrl = "https://p6ob2gcmx6.execute-api.us-west-2.amazonaws.com/production/booking/all";
 
   constructor(private http: HttpClient, private _router: Router) { }
 

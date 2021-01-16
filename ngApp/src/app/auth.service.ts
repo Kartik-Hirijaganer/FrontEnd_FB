@@ -7,8 +7,8 @@ import { Router } from '@angular/router';
 })
 export class AuthService {
 
-  private _registerUrl = "http://localhost:3200/user/signUp";
-  private _loginUrl = "http://localhost:3200/user/login";
+  private _registerUrl = "https://7uc69ca920.execute-api.us-west-2.amazonaws.com/production/user/signUp";
+  private _loginUrl = "https://7uc69ca920.execute-api.us-west-2.amazonaws.com/production/user/login";
 
   constructor(private http: HttpClient, private _router: Router) { }
 

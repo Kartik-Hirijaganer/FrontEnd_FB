@@ -26,6 +26,9 @@ span {
   width: 110px;
   text-align: center;
 }
+.navbar-light .navbar-nav .nav-link{
+  color:#f5f2f2;
+}
 
 .nav-link:hover{
   background-color: #F0FFFF;
@@ -81,4 +84,55 @@ span {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+/* media queries */
+@media only screen and (max-width: 990px) {
+  .navbar{
+    background-color: #00688B;
+    height: auto;
+  }
+
+  .navbar-brand{
+    font: auto;
+  }
+
+  .navbar-light .navbar-toggler{
+    background-color: #f5f2f2;
+  }
+
+  .navbar-light .navbar-nav .nav-link{
+    color:#f5f2f2;
+    font: auto;
+    margin: 0px;
+    padding-right: 10px;
+    height: auto;
+    width: auto;
+    text-align: left;
+  }
+
+  /* .page-footer{
+    margin-top: 210px;
+  } */
+
+  .up-footer-head{
+    margin-top: 30px;
+    font: auto;
+  }
+  
+  .up-footer{
+    font: auto;
+  }
+
+  /* social media icons */
+.fa {
+  padding: 10px;
+  font: auto;
+  width: auto;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
 }
